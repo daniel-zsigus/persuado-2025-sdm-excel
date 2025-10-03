@@ -1,9 +1,9 @@
 {
-  "name": "office-addin-taskpane-js",
+  "name": "office-addin-taskpane",
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/OfficeDev/Office-Addin-TaskPane-JS.git"
+    "url": "git+https://github.com/OfficeDev/Office-Addin-TaskPane-JS.git"
   },
   "license": "MIT",
   "config": {
@@ -27,6 +27,8 @@
   },
   "dependencies": {
     "core-js": "^3.36.0",
+    "express": "^5.1.0",
+    "node-fetch": "^3.3.2",
     "regenerator-runtime": "^0.14.1"
   },
   "devDependencies": {
@@ -58,5 +60,13 @@
   "browserslist": [
     "last 2 versions",
     "ie 11"
-  ]
+  ],
+  "description": "Excel add-ins are integrations built by third parties into Excel by using [Excel JavaScript API](https://learn.microsoft.com/en-us/office/dev/add-ins/reference/overview/excel-add-ins-reference-overview) and [Office Platform capabilities](https://learn.microsoft.com/en-us/office/dev/add-ins/overview/office-add-ins).",
+  "main": "webpack.config.js",
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/OfficeDev/Office-Addin-TaskPane-JS/issues"
+  },
+  "homepage": "https://github.com/OfficeDev/Office-Addin-TaskPane-JS#readme"
 }

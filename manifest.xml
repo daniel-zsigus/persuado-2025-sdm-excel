@@ -6,6 +6,12 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="persuado-2025-sdm-excel"/>
   <Description DefaultValue="A template to get started."/>
+  <AppDomains>
+    <AppDomain>https://auth.atlassian.com</AppDomain>
+    <AppDomain>https://api.atlassian.com</AppDomain>
+    <AppDomain>https://localhost:3000</AppDomain>
+  </AppDomains>
+    
   <IconUrl DefaultValue="https://localhost:3000/assets/icon-32.png"/>
   <HighResolutionIconUrl DefaultValue="https://localhost:3000/assets/icon-64.png"/>
   <SupportUrl DefaultValue="https://www.contoso.com/help"/>
