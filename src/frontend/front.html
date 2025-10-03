@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JIRA JQL Search Layout</title>
+    <link rel="stylesheet" href="front.css"> 
+</head>
+<body>
+
+    <div class="container">
+
+        <header class="jql-input-area">
+            <textarea id="jql-query" placeholder="Enter your JQL query here (e.g., project = 'XYZ' AND status = 'Open')"></textarea>
+            </header>
+
+        <div class="date-selection">
+            <div class="date-box">
+                <label for="from-date">From</label>
+                <input type="date" id="from-date" name="from-date">
+            </div>
+            
+            <div class="date-and-run-group">
+                <div class="date-box">
+                    <label for="to-date">To</label>
+                    <input type="date" id="to-date" name="to-date">
+                </div>
+                <button class="run-button" onclick="runJQLSearch()">CALCULATE</button>
+            </div>
+        </div>
+<!-- 
+        <div class="results-container">
+            <div class="result-panel left-panel">
+                <p>Display Excel table loaded later</p>
+            </div>
+
+            <div class="result-panel right-panel">
+                <p>Display pivot or other data loaded later</p>
+            </div>
+        </div> -->
+
+    </div>
+
+    <script>
+        function runJQLSearch() {
+            const jql = document.getElementById('jql-query').value;
+            const fromDate = document.getElementById('from-date').value;
+            const toDate = document.getElementById('to-date').value;
+            
+            console.log(`Executing JQL: ${jql}`);
+            console.log(`Period: ${fromDate} to ${toDate}`);
+            // Actual JQL execution logic would go here
+        }
+    </script>
+
+</body>
+</html>
